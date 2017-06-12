@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="br.epcb.principal.principal"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.EPCB">
+        <activity android:name="br.epcb.principal.principal.InitActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.epcb.principal.principal.ModuleActivity"
+            android:label="@string/app_title">
+        </activity>
+        <activity
+            android:name="br.epcb.principal.principal.LoginActivity"
+            android:label="@string/title_activity_login">
+        </activity>
+        <activity android:name="br.epcb.principal.principal.CourseActivity">
+        </activity>
+        <activity android:name="br.epcb.principal.principal.VideoDescriptionActivity">
+        </activity>
+        <activity
+            android:name="br.epcb.principal.principal.VideoDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_video_detail"
+            android:parentActivityName="br.epcb.principal.principal.VideoDescriptionActivity"
+            android:theme="@style/Theme.EPCB">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.epcb.principal.principal.VideoDescriptionActivity"/>
+        </activity>
+    </application>
+
+</manifest>

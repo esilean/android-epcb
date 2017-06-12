@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                tools:context="br.epcb.principal.principal.VideoDescriptionActivityFragment"
+                tools:showIn="@layout/activity_video_description">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/md_white_1000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCourseNameVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvCourseTitleVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14sp"/>
+
+            <ImageButton
+                android:id="@+id/imgBtPlay"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorBackground"
+                android:scaleType="centerCrop"
+                android:src="@drawable/videoplayv3"/>
+
+            <TextView
+                android:id="@+id/tvCourseDescriptionVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

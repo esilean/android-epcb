@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Theme.EPCB" parent="Theme.Base">
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+</resources>
